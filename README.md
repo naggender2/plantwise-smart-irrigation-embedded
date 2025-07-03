@@ -161,15 +161,3 @@ When using the ESP-01 Wi-Fi module for MQTT communication, we encountered a majo
 A full demonstration of the PlantWise system—including STM32, ESP-01, Raspberry Pi, and Android app integration—is available here:
 
 **[Project Demo Video](https://drive.google.com/file/d/1XK0QXm43m6MEAoeMoAGipwbf2nM6J-KE/view?usp=sharing)**
-
-### Appendix: ESP-01 Firmware Update Resources
-
-- **Firmware Repository:**  
-  [https://github.com/cjacker/opensource-toolchain-esp8266](https://github.com/cjacker/opensource-toolchain-esp8266)
-- **Update Process:**  
-  - Download the correct firmware for your ESP-01’s flash size (1MB or 4MB).
-  - Use a Python script (e.g., esptool.py) to flash the firmware.
-  - Refer to YouTube tutorials for wiring and flashing steps.
-  - Ensure you follow the correct procedure for connecting/disconnecting GPIO pins during the update.
-
-*Note: The update process is straightforward if you have the right firmware. The main challenge is finding the correct firmware for your device’s flash size. Most ESP-01 modules ship with v1.5 or older firmware, which does not support MQTT AT commands. Upgrading to v2.0+ is essential for PlantWise to function properly.*
